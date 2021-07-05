@@ -21,14 +21,7 @@ export function Dashboard() {
   const [foods, setFoods] = useState<Food[]>([]);
   const [modalOpen, setModalOpen] = useState(false);
   const [editModalOpen, setEditModalOpen] = useState(false);
-  const [editingFood, setEditingFood] = useState<Food>({
-    "id": 2,
-    "name": "Veggie",
-    "description": "Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.",
-    "price": 1.99,
-    "available": true,
-    "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png"
-  });
+  const [editingFood, setEditingFood] = useState<Food>({} as Food);
 
   useEffect(() => {
     async function getFoods() {

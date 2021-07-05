@@ -3,7 +3,6 @@ import {
   useRef,
   useState,
   useCallback,
-  ReactNode,
 } from 'react';
 
 import { useField } from '@unform/core';
